@@ -1,4 +1,4 @@
-# whichAlive
+# whichAlive init
 
 批量多线程探测url存活
 
