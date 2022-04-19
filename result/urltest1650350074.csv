@@ -1,0 +1,15 @@
+no,url,ip,state,state_code,title,server,length
+1,http://www.baidu.com,220.181.38.150,alive,302->200,302 Found->百度一下，你就知道,BWS/1.1->BWS/1.1,154->353438
+3,http://blog.csdn.net/u013066730/article/det,182.92.187.217,alive,301->404,301 Moved Permanently->404,openresty->openresty,166->31507
+4,http://www.360doc.com/index.html,103.15.99.89,alive,200,,Tengine,241458
+5,http://blog.csdn.net/u013066730/article/2/32131,182.92.187.217,alive,301->404,301 Moved Permanently->404,openresty->openresty,166->31507
+6,http://blog.csdn.net/u013066730/article/details/12,182.92.187.217,alive,301->404,301 Moved Permanently->404,openresty->openresty,166->31507
+8,http://www.360doc.com/content/22/0416/23/70069919_1026863844.shtml,103.15.99.89,alive,200,,Tengine,112740
+7,http://blog.csdn.net/u013066730/artic,182.92.187.217,alive,301->404,301 Moved Permanently->404,openresty->openresty,166->31507
+9,http://www.360doc.com/content/22/0416/23/70069919_10268612313844.shtml,103.15.99.89,alive,404,你浏览的页面不存在,Tengine,7339
+11,http://www.360doc.com/content/22/0416/23/70069919_1,122.225.213.226,alive,404,404 Not Found,Tengine,564
+10,http://www.360doc.com/conte/0416/23/70069919,122.225.213.226,alive,404,你浏览的页面不存在,Tengine,7339
+12,http://blog.csdn.net/u013066730/,182.92.187.217,alive,301->200,"301 Moved Permanently->mjiansun的博客_CSDN博客-Python,机器学习,Ubuntu领域博主",openresty->openresty,166->132781
+14,http://blog.csdn.net/1/123/2/82775458,182.92.187.217,alive,301->404,301 Moved Permanently->404,openresty->openresty,166->31507
+13,http://blog.csdn.net/,182.92.187.217,alive,301->200,301 Moved Permanently->CSDN博客-专业IT技术发表平台,openresty->openresty,166->219794
+15,http://blog.csdn.net/0/article/details/82775458,182.92.187.217,alive,301->404,301 Moved Permanently->404,openresty->openresty,166->31507
