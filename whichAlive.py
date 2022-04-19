@@ -120,7 +120,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(usage='whichAlive usage')
     parser.add_argument('-f', '--file', default='url.txt', help='URL lists file.')
     parser.add_argument('--proxy', default='', help='Set proxy, such as 127.0.0.1:8080')
-    parser.add_argument('-t', '--thread', default=10, help='Set max threads, default 10')
+    parser.add_argument('-t', '--thread', default=10, type=int, help='Set max threads, default 10')
     parser.add_argument('-d', '--debug', default=False, action='store_true', help='print some debug information')
     args = parser.parse_args()
 
