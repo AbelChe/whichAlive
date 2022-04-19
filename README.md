@@ -45,3 +45,8 @@ whichAlive 代理到xray
 ```sh
 python whichAlive.py -f xxx.txt --proxy 127.0.0.1:7777
 ```
+
+效果截图：
+![](images/1.png)
+![](images/2.png)
+
