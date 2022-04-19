@@ -82,7 +82,13 @@ class whichAlive(object):
 
     def __getwebtitle(self, r):
         try:
-            return re.findall(r'<title>(.*?)</title>', r.text)[0]
+            if r.headers.get('Content-Type').split('charset=')[1]:
+                charset = r.headers.get('Content-Type').split('charset=')[1]
+            elif re.findall(r'<meta charset=(.*?)>', r.text)[0].replace('\'', '').replace('"', ''):
+                charset = re.findall(r'<meta charset=(.*?)>', r.text)[0].replace('\'', '').replace('"', '')
+            else:
+                charset = 'utf8'
+            return re.findall(r'<title>(.*?)</title>', r.content.decode(charset))[0]
         except:
             return ''
 
