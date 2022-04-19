@@ -4,7 +4,7 @@
 
 探测存活、获取基本信息（标题、ip、长度、跳转、server等）
 
-边探测遍输出结果，当前目录下urlxxxxxxxxxxxx.csv
+边探测遍输出结果，当前目录下result/urlxxxxxxxxxxxx.csv
 
 输出的csv如果直接用excel打开乱码，可以选择导入数据：数据->获取数据->从文本，然后编码格式选择utf8即可，或者使用macos的numbers直接打开
 
