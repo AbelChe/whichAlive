@@ -129,5 +129,6 @@ dmypy.json
 .pyre/
 
 result/*.csv
+error/*.txt
 url.txt
 .DS_Store
