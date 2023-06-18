@@ -270,10 +270,13 @@ class whichAlive(object):
                 )
                 for rule in self.finger_relation_map.get(req_id):
                     # 1. match keywords
-                    if rule.get('keywords'):
-                        for kwd in rule.get('keywords'):
-                            if kwd in req.text:
-                                finger.append(rule.get('name'))
+                    if rule.get('keyword'):
+                        kwd_matched_flag = 0
+                        for kwd in rule.get('keyword'):
+                            if kwd in req.content.decode():
+                                kwd_matched_flag += 1
+                        if kwd_matched_flag == len(rule.get('keyword')):
+                            finger.append(rule.get('name'))
                     # 2. match headers 
                     #### Weather "status_code" need to be matched here???
                     if rule.get('headers'):
