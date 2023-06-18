@@ -20,19 +20,26 @@
  _      __/ /_  (_)____/ /_  /   |  / (_)   _____
 | | /| / / __ \/ / ___/ __ \/ /| | / / / | / / _ \
 | |/ |/ / / / / / /__/ / / / ___ |/ / /| |/ /  __/
-|__/|__/_/ /_/_/\___/_/ /_/_/  |_/_/_/ |___/\___/
+|__/|__/_/ /_/_/\___/_/ /_/_/  |_/_/_/ |___/\___/  FAST
 
-usage: whichalive.py -u url.txt
+About: https://github.com/abelche/whichalive
+
+usage: FAST detect alive targets
+  python whichalive-air.py -u url.txt
+  cat url.txt | python whichalive-air.py
 
 optional arguments:
   -h, --help            show this help message and exit
   -f [FILE], --file [FILE]
                         URL lists file.
-  --proxy PROXY         Set proxy, such as 127.0.0.1:8080
+  --proxy PROXY         Set proxy, such as http://127.0.0.1:8080 or socks5://127.0.0.1:7777
   -t THREAD, --thread THREAD
                         Set max threads, default 20
+  --timeout TIMEOUT     Set request timeout value, default 10s
   -d, --debug           print some debug information
+  --no-redirect         Set to disallow redirect
   --try-again           If some error, try again scan that url once
+  --no-outfile          Set to NOT output results to file
 ```
 
 直接识别：
@@ -56,7 +63,16 @@ whichAlive 代理到xray
 python whichAlive.py -f xxx.txt --proxy 127.0.0.1:7777
 ```
 
+联动fofa等
+
+```shell
+echo -n 'title="管理后台"' | base64 | xargs -I '{}' curl -s 'https://fofa.info/api/v1/search/all?email=123123123@qq.com&key=xxxxxxxxxxxxxxxxxxx&size=30&fields=host&qbase64={}' | jq -r '.results[]' | python whichalive.py --no-outfile
+```
+
 效果截图：
+
+![](images/3.png)
+
 ![](images/1.png)
 ![](images/2.png)
 
