@@ -48671,5 +48671,20 @@
     "favicon_hash": [],
     "priority": 3,
     "name": "飞鱼星-安全设备"
+  },
+  {
+    "path": "/",
+    "request_method": "get",
+    "request_headers": {},
+    "request_data": "",
+    "status_code": 0,
+    "headers": {},
+    "keyword": [
+      "请使用手机360ID扫码登录</span>",
+      "<h2>SECWORLD</h2>"
+    ],
+    "favicon_hash": [],
+    "priority": 3,
+    "name": "360Connect"
   }
 ]
